@@ -61,6 +61,8 @@ cd /opt/masos/supplementary/retropie-manager/project/templates/
   wget http://masos.ga/?download=162 &&  mv /opt/masos/supplementary/retropie-manager/project/templates/index.html\?download\=162 oscuridad.zip
   unzip oscuridad.zip
   sudo cp oscuridad/skeleton.html /opt/masos/supplementary/retropie-manager/project/templates/
+  sudo rm -r /opt/masos/supplementary/retropie-manager/project/templates/oscuridad/
+  sudo rm -r /opt/masos/supplementary/retropie-manager/project/templates/oscuridad.zip
   sudo chown -R pi:pi /opt/masos/supplementary/retropie-manager/project/templates/
 dialog --infobox "...Manager theme Oscuridad se instalo correctamente!..." 25 55 ; sleep 5
 # ---------------- FIN DEL CODIGO ------------ #
