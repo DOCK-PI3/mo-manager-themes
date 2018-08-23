@@ -1,4 +1,5 @@
 #!/bin/bash
+#Scrip unico para MasOS-Manager ,idea del script por Mabedeep miembro de mi arcade spain
 rp_module_id="mo-manager-themes"
 rp_module_desc="MasOS Manager instalador de temas extras"
 rp_module_section=""
@@ -45,7 +46,8 @@ function manager_install_blueandred() {                                         
 dialog --infobox "...Instalando Manager theme Blue and Red..." 25 55 ; sleep 3
 cd /opt/masos/supplementary/retropie-manager/project/templates/
  # sudo rm skeleton.html
- wget http://masos.ga/?download=158
+ wget http://masos.ga/?download=158 &&  mv /opt/masos/supplementary/retropie-manager/project/templates/index.html\?download\=158 skeleton.html
+ sudo chown -R pi:pi /opt/masos/supplementary/retropie-manager/project/templates/
 dialog --infobox "...Manager theme Blue and Red se instalo correctamente!..." 25 55 ; sleep 5 
 }
 
@@ -56,8 +58,11 @@ function manager_install_oscuridad() {
 dialog --infobox "...Instalando Manager theme Oscuridad..." 25 55 ; sleep 5
 cd /opt/masos/supplementary/retropie-manager/project/templates/
   # sudo rm skeleton.html
-  wget http://masos.ga/?download=162
-dialog --infobox "...Manager theme Oscuridad se instalo correctamente!..." 25 55 ; sleep 10
+  wget http://masos.ga/?download=162 &&  mv /opt/masos/supplementary/retropie-manager/project/templates/index.html\?download\=162 oscuridad.zip
+  unzip oscuridad.zip
+  sudo cp oscuridad/skeleton.html /opt/masos/supplementary/retropie-manager/project/templates/
+  sudo chown -R pi:pi /opt/masos/supplementary/retropie-manager/project/templates/
+dialog --infobox "...Manager theme Oscuridad se instalo correctamente!..." 25 55 ; sleep 5
 # ---------------- FIN DEL CODIGO ------------ #
 }
 
