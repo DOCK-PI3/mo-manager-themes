@@ -55,8 +55,8 @@ dialog --infobox "...Manager theme Blue and Red se instalo correctamente!..." 25
 function manager_install_oscuridad() {                                          
 dialog --infobox "...Instalando Manager theme Oscuridad..." 25 55 ; sleep 5
 cd /opt/masos/supplementary/retropie-manager/project/templates/
-  # sudo rm skeleton.html
-  
+  sudo rm skeleton.html
+  wget https://doc-0c-00-docs.googleusercontent.com/docs/securesc/d1ibgdk8cmi2teg1rrg47ua4rt6te0bs/bnvvtnce5v70tvqg3t5e6qsaid3bitk4/1535061600000/10946459356008990870/10946459356008990870/1-sNDxg5duftk7xu82md-vigQ9imLYF1J?e=download
 dialog --infobox "...Manager theme Oscuridad se instalo correctamente!..." 25 55 ; sleep 10
 # ---------------- FIN DEL CODIGO ------------ #
 }
