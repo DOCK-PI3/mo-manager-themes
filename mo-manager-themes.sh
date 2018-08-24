@@ -6,11 +6,11 @@ rp_module_section=""
 infobox= ""
 infobox="${infobox}_______________________________________________________\n\n"
 infobox="${infobox}\n"
-infobox="${infobox}\nMasOS Manager instalador de temas. \n\n"
+infobox="${infobox}\nMasOS Manager instalador de temas.\n\n"
 infobox="${infobox}\n"
 infobox="${infobox}\n"
-infobox="${infobox}\n... Para mas descargas y noticias visita... http://masos.ga ..."
-infobox="${infobox}\nEntra a formar parte de nuestra comunidad en Discord - MyArcadeSpain -"
+infobox="${infobox}\n... Para mas descargas y noticias visita... http://masos.ga"
+infobox="${infobox}\nEntra a formar parte de nuestra comunidad en Discord - MyArcadeSpain -\n"
 infobox="${infobox}Los temas se descargan y se configuran automaticamente....\n"
 infobox="${infobox}\nUna vez instalado el tema presiona F5 o Ctrl+r en el navegador para recargar la pagina."
 
@@ -81,7 +81,7 @@ cd /opt/masos/supplementary/retropie-manager/project/templates/
   sudo rm -r /opt/masos/supplementary/retropie-manager/project/templates/oscuridad_v2/
   sudo rm -r /opt/masos/supplementary/retropie-manager/project/templates/oscuridad_v2.zip
   sudo chown -R pi:pi /opt/masos/supplementary/retropie-manager/project/templates/
-dialog --infobox "...Manager theme MasOS Pro se instalo correctamente!..." 25 55 ; sleep 10
+dialog --infobox "...Manager theme Oscuridad v2 se instalo correctamente!..." 25 55 ; sleep 10
 # ---------------- FIN DEL CODIGO ------------ #
 }
 main_menu
